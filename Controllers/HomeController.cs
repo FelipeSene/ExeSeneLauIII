@@ -32,7 +32,7 @@ namespace ExeSeneLauIII.Controllers
 
             return View();
         }
-
+        [HttpGet]
         public ActionResult CalculaNota(int Erros)
         {
             if (Erros == null || Erros > 10 || Erros < 0)

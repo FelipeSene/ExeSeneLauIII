@@ -27,8 +27,8 @@ namespace ExeSeneLauIII.Areas.Veiculo.Controllers
             Moto moto = new Moto();
             moto.Fabricante = "Ducati";
             moto.Chassis = "Sport";
-            moto.Cilindrada = 1200;
-            moto.Transmissao = "Manual";
+            moto.Cilindrada = 998;
+            moto.Transmissao = "Automatica";
 
             ViewData["CFabricante"] = carro.Fabricante;
             ViewData["CChassis"] = carro.Chassis;
@@ -58,8 +58,8 @@ namespace ExeSeneLauIII.Areas.Veiculo.Controllers
             Moto moto = new Moto();
             moto.Fabricante = "Ducati";
             moto.Chassis = "Sport";
-            moto.Cilindrada = 1200;
-            moto.Transmissao = "Manual";
+            moto.Cilindrada = 998;
+            moto.Transmissao = "Automatica";
 
             return View(moto);
         }

@@ -41,7 +41,13 @@ namespace ExeSeneLauIII.Controllers
             if (TempData["Input"] != null)
                 return RedirectToAction("CadastroFuncionario");
             else
-                return View();
+            {
+                Funcionario funcionario = new Funcionario();
+                funcionario.Codigo = Codigo;
+                funcionario.Nome = Nome;
+                funcionario.Funcao = Funcao;
+                return View(funcionario);
+            }
         }
     }
 }
