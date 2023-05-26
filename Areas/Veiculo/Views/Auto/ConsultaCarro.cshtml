@@ -1,7 +1,11 @@
-﻿
+﻿@model ExeSeneLauIII.Models.Carro
+
 @{
     ViewBag.Title = "ConsultaCarro";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>ConsultaCarro - Exercício III</h2>
+<h1>Carro</h1>
+<img src="~/Images/camaro2023.jpg" />
+<h2>@Model.Fabricante / @Model.Chassis / @Model.Nome / @Model.Transmissao</h2>
 

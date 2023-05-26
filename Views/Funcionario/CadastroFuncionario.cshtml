@@ -1,0 +1,31 @@
+﻿@model ExeSeneLauIII.Models.Funcionario
+@{
+    ViewBag.Title = "CadastroFuncionario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<form action="GetFuncionario" method="post">
+    @if (TempData["Input"] != null)
+            {
+                <h2 style="color: white; background-color:#FF0000;">O campo @TempData["Input"] deve ser preenchido!</h2>
+            }
+    <div>
+        <label for="Codigo">Código: </label>
+        <input type="number" value="@Model.Codigo" name="Codigo" id="Codigo" />
+    </div>
+    <br />
+    <div>
+        <label for="Nome">Nome: </label>
+        <input type="text" value="@Model.Nome" name="Nome" id="Nome" />
+    </div>
+    <div>
+        <label for="Funcao">Função: </label>
+        <input type="text" value="@Model.Funcao" name="Funcao" id="Funcao" />
+    </div>
+
+    <div>
+        <input type="submit" value="Cadastrar" />
+    </div>
+</form>
+

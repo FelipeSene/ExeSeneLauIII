@@ -1,7 +1,12 @@
-﻿
+﻿@model ExeSeneLauIII.Models.Moto
+
 @{
     ViewBag.Title = "ConsultaMoto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>ConsultaMoto</h2>
+<h1>Moto</h1>
+<img src="~/Images/DucatiV4S.png" />
+<h2>@Model.Fabricante / @Model.Chassis / @Model.Cilindrada cc / @Model.Transmissao</h2>
+
 
