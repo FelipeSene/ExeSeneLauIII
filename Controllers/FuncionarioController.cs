@@ -21,7 +21,7 @@ namespace ExeSeneLauIII.Controllers
             return View(funcionario);
         }
         [HttpPost]
-        public ActionResult GetFuncionario(int Codigo, string Nome, string Funcao)
+        public ActionResult GetFuncionario(int? Codigo, string Nome, string Funcao)
         {
                 ViewBag.Codigo = Codigo;
                 ViewBag.Nome = Nome;

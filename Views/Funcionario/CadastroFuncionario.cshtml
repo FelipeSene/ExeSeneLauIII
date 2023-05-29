@@ -8,7 +8,7 @@
 <form action="GetFuncionario" method="post">
     @if (TempData["Input"] != null)
     {
-        <h2 style="color: white; background-color:#FF0000;">O campo @TempData["Input"] deve ser preenchido!</h2>
+        <h2 class="bg-danger text-white">O campo @TempData["Input"] deve ser preenchido!</h2>
     }
     <div>
         <label for="Codigo">Código: </label>
